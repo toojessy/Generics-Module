@@ -20,9 +20,15 @@ public class Exercise19_03 {
      * @return a new list with only unique elements
      */
     public static <E> ArrayList<E> removeDuplicates(ArrayList<E> list) {
-        // TODO: Implement this method
-        System.out.println("TODO: removeDuplicates() not implemented yet");
-        return null;
+        ArrayList<E> newList = new ArrayList<>();
+
+        for (E element : list) {
+            if (!newList.contains(element)) {
+                newList.add(element);
+            }
+        }
+
+        return newList;
     }
 
     public static void main(String[] args) {
